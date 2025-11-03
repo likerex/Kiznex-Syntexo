@@ -3,99 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiznex Syntexo - AI Powered Solutions</title>
-    <!-- Tailwind CSS (for base utilities) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Font: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-    <!-- Nayi style.css file ko jodna (Yeh abhi aapne banayi hai) -->
+    <title>Kiznex Syntexo - AI Art & Solutions</title>
+    
+    <!-- External CSS Link -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="bg-gray-900 text-gray-100">
-    
-    <!-- Navigation Bar -->
-    <header class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm shadow-lg">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-extrabold tracking-wider text-blue-400 hover:text-blue-300 transition duration-300">
-                Kiznex<span class="text-pink-500">Syntexo</span>
-            </a>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#home" class="hover:text-pink-500 transition duration-300">Home</a>
-                <a href="#features" class="hover:text-pink-500 transition duration-300">Features</a>
-                <a href="#about" class="hover:text-pink-500 transition duration-300">About</a>
-                <a href="#contact" class="hover:text-pink-500 transition duration-300">Contact</a>
-            </nav>
-        </div>
-    </header>
+<body>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative overflow-hidden py-32 md:py-48 bg-gray-900">
-        <div class="container mx-auto px-4 relative z-10 text-center">
-            <h1 class="glitch-text text-5xl md:text-7xl lg:text-8xl mb-6 leading-tight" data-text="Welcome to Kiznex Syntexo">
-                Welcome to Kiznex Syntexo
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-400 mb-10">
-                Transforming Ideas into Digital Reality
-            </p>
-            <a href="#features" class="inline-block px-8 py-3 text-lg font-semibold bg-blue-500 hover:bg-blue-600 rounded-lg transition duration-300 transform hover:scale-105 shadow-xl">
-                Get Started
-            </a>
-        </div>
-        <!-- Abstract Background Shapes -->
-        <div class="absolute inset-0 z-0 opacity-20">
-            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-pink-600 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow delay-500"></div>
-        </div>
-    </section>
+    <!-- Animated Background Elements (From style.css) -->
+    <div class="holo-bg"></div>
+    <div class="particle-field" id="particles"></div>
+    <div class="scanline"></div>
 
-    <!-- Features Section -->
-    <section id="features" class="container mx-auto px-4 py-16">
-        <h2 class="text-4xl font-extrabold text-center mb-12 text-blue-400">Our Features</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Feature Card 1 -->
-            <div class="feature-card bg-gray-800 p-6 rounded-xl shadow-2xl transition duration-500 hover:shadow-blue-500/50">
-                <div class="text-4xl mb-4 text-pink-500">🚀</div>
-                <h3 class="text-2xl font-bold mb-3">Fast Performance</h3>
-                <p class="text-gray-400">Lightning-fast load times and optimized code for the best user experience.</p>
+    <div class="container">
+        <!-- Header / Logo -->
+        <header>
+            <div class="hud-title-wrapper">
+                <h1 class="hud-title">Kiznex Syntexo</h1>
+                <p class="subtitle-hud">◢ AI Powered Solutions ◣</p>
             </div>
-            <!-- Feature Card 2 -->
-            <div class="feature-card bg-gray-800 p-6 rounded-xl shadow-2xl transition duration-500 hover:shadow-blue-500/50">
-                <div class="text-4xl mb-4 text-blue-400">💡</div>
-                <h3 class="text-2xl font-bold mb-3">Innovative Design</h3>
-                <p class="text-gray-400">Modern, clean, and responsive designs that stand out from the crowd.</p>
-            </div>
-            <!-- Feature Card 3 -->
-            <div class="feature-card bg-gray-800 p-6 rounded-xl shadow-2xl transition duration-500 hover:shadow-blue-500/50">
-                <div class="text-4xl mb-4 text-green-400">🔒</div>
-                <h3 class="text-2xl font-bold mb-3">Secure & Reliable</h3>
-                <p class="text-gray-400">Built with security best practices to protect your data and privacy.</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- About Us Section -->
-    <section id="about" class="container mx-auto px-4 py-16 border-t border-gray-800">
-        <h2 class="text-4xl font-extrabold text-center mb-12 text-pink-500">About Us</h2>
-        <p class="text-lg text-center text-gray-400 max-w-4xl mx-auto leading-relaxed">
-            Kiznex Syntexo is a cutting-edge technology platform dedicated to delivering innovative solutions for businesses and individuals. We combine creativity with technology to build exceptional digital experiences. Our focus is on providing high-quality AI-generated content and expert analysis in a clean, professional, and AdSense-friendly environment.
-        </p>
-    </section>
+        </header>
 
-    <!-- Contact & Footer -->
-    <footer id="contact" class="bg-gray-800 mt-16 py-8">
-        <div class="container mx-auto px-4 text-center">
-            <h3 class="text-2xl font-bold mb-4 text-white">Contact Us</h3>
-            <p class="text-lg text-gray-400">For inquiries, please email us:</p>
-            <p class="text-lg text-blue-400 mb-6">info@kiznexsyntexo.com</p>
-            
-            <p class="text-sm text-gray-500 mt-8">
-                &copy; 2024 Kiznex Syntexo. All rights reserved.
-            </p>
-            <p class="text-xs text-gray-600 mt-2">
-                Deployed and developed with Vercel and GitHub by Nexlike.
-            </p>
-        </div>
-    </footer>
+        <!-- Main Holo Card Grid Section (FINAL SIZE & SHAPE) -->
+        <section class="holo-card-grid">
+
+            <!-- 6 BLANK CARDS WITH PLACEHOLDERS FOR YOUR VIDEO/IMAGE -->
+            <div class="holo-card card-01" data-link="page-01.html">
+                <div class="holo-number">01</div>
+                <div class="holo-icon">
+                    <!-- Placeholder Image (Replace with your actual image/video) -->
+                    <img src="https://placehold.co/1280x960/00FFFF/000000?text=BLANK+SLOT+01" alt="Content 01 Placeholder" class="holo-gif-icon">
+                </div>
+                <div class="holo-card-inner">
+                    <!-- Text hidden for clean look, but present for SEO -->
+                    <h2 class="holo-heading sr-only">Video Stream 01</h2>
+                    <a href="page-01.html" class="sci-fi-btn"><i class="fas fa-eye"></i> View Content</a>
+                </div>
+            </div>
+
+            <div class="holo-card card-02" data-link="page-02.html">
+                <div class="holo-number">02</div>
+                <div class="holo-icon">
+                     <img src="https://placehold.co/1280x960/00AAAA/000000?text=BLANK+SLOT+02" alt="Content 02 Placeholder" class="holo-gif-icon">
+                </div>
+                 <div class="holo-card-inner">
+                    <h2 class="holo-heading sr-only">Video Stream 02</h2>
+                    <a href="page-02.html" class="sci-fi-btn"><i class="fas fa-eye"></i> View Content</a>
+                </div>
+            </div>
+
+            <div class="holo-card card-03" data-link="page-03.html">
+                <div class="holo-number">03</div>
+                <div class="holo-icon">
+                    <img src="https://placehold.co/1280x960/008888/000000?text=BLANK+SLOT+03" alt="Content 03 Placeholder" class="holo-gif-icon">
+                </div>
+                <div class="holo-card-inner">
+                    <h2 class="holo-heading sr-only">Video Stream 03</h2>
+                    <a href="page-03.html" class="sci-fi-btn"><i class="fas fa-eye"></i> View Content</a>
+                </div>
+            </div>
+
+            <div class="holo-card card-04" data-link="page-04.html">
+                <div class="holo-number">04</div>
+                <div class="holo-icon">
+                    <img src="https://placehold.co/1280x960/006666/000000?text=BLANK+SLOT+04" alt="Content 04 Placeholder" class="holo-gif-icon">
+                </div>
+                <div class="holo-card-inner">
+                    <h2 class="holo-heading sr-only">Video Stream 04</h2>
+                    <a href="page-04.html" class="sci-fi-btn"><i class="fas fa-eye"></i> View Content</a>
+                </div>
+            </div>
+
+            <div class="holo-card card-05" data-link="page-05.html">
+                <div class="holo-number">05</div>
+                <div class="holo-icon">
+                    <img src="https://placehold.co/1280x960/004444/000000?text=BLANK+SLOT+05" alt="Content 05 Placeholder" class="holo-gif-icon">
+                </div>
+                <div class="holo-card-inner">
+                    <h2 class="holo-heading sr-only">Video Stream 05</h2>
+                    <a href="page-05.html" class="sci-fi-btn"><i class="fas fa-eye"></i> View Content</a>
+                </div>
+            </div>
+
+            <div class="holo-card card-06" data-link="page-06.html">
+                <div class="holo-number">06</div>
+                <div class="holo-icon">
+                    <img src="https://placehold.co/1280x960/002222/000000?text=BLANK+SLOT+06" alt="Content 06 Placeholder" class="holo-gif-icon">
+                </div>
+                <div class="holo-card-inner">
+                    <h2 class="holo-heading sr-only">Video Stream 06</h2>
+                    <a href="page-06.html" class="sci-fi-btn"><i class="fas fa-eye"></i> View Content</a>
+                </div>
+            </div>
+
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer-hud">
+            <p>© 2025 Kiznex Syntexo. All rights reserved. | Deployed on Vercel by Nexlike.</p>
+            <p>Contact: <a href="mailto:info@kiznexsyntexo.com">info@kiznexsyntexo.com</a></p>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
 
