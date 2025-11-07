@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. YAHAN TITLE BADLEIN -->
+    <title>Project: Anime Project</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet se link kiya -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Is page ka specific color (Optional) -->
+    <style>
+        .post-content { border-color: rgba(0, 255, 255, 0.2); background: rgba(0, 20, 20, 0.3); }
+        .post-title { color: #00ffff; text-shadow: 0 0 15px #00ffff; border-color: rgba(0, 255, 255, 0.3); }
+        .back-btn-wrapper .sci-fi-btn { border-color: #00ffff; color: #00ffff; }
+        .back-btn-wrapper .sci-fi-btn:hover { background: linear-gradient(135deg, #00ffff, #00aaee); color: #000; }
+    </style>
+</head>
+<body>
+    <div class="holo-bg"></div>
+    <div class="particle-field" id="particles-post"></div>
+
+    <!-- (Hidden) Lightbox Modal HTML -->
+    <div id="lightbox-modal">
+        <div class="lightbox-content">
+            <span id="lightbox-close">&times;</span>
+            <img id="lightbox-img" src="images/placeholder.jpg" alt="Full Screen Image">
+            <div class="lightbox-caption">
+                <!-- Download Button -->
+                <a href="#" id="download-btn" class="sci-fi-btn" download>Download</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- (Hidden) Ad Modal HTML -->
+    <div id="ad-modal">
+        <div class="ad-content">
+            <h2>Download Initiated!</h2>
+            <p>Your download will start shortly. Please check our sponsors.</p>
+            <!-- Yahaan aap ad code (e.g., AdSense) daal sakte hain -->
+            <img src="https://placehold.co/300x250/000/ff0077/png?text=AD+SLOT" alt="Advertisement">
+            <br><br>
+            <a href="#" id="close-ad-btn" class="sci-fi-btn">Close Ad & Go Back</a>
+        </div>
+    </div>
+
+
+    <!-- Main Content -->
+    <div class="post-container">
+        
+        <div class="back-btn-wrapper">
+            <!-- Back Button (id zaroori hai) -->
+            <a href="index.html#projects" class="sci-fi-btn" id="back-to-hub-btn">◢ Back to Project Hub</a>
+        </div>
+
+        <article class="post-content">
+            <!-- 2. YAHAN PROJECT TITLE BADLEIN -->
+            <h1 class="post-title">PROJECT: ANIME PROJECT</h1>
+
+            <!-- 3. YAHAN VIDEO KA PATH BADLEIN -->
+            <div class="post-media">
+                 <video preload="metadata" loop muted playsinline autoplay>
+                    <source src="videos/intro1.mp4" type="video/mp4"> 
+                </video>
+            </div>
+
+            <!-- 4. YAHAN POORA DESCRIPTION BADLEIN -->
+            <div class="post-body">
+                <p>Welcome to the Anime Hub. Yahaan aapko premium anime content, wallpapers, aur clips milengi. Neeche di gayi gallery se high-quality images download karein.</p>
+                
+                <!-- 5. YAHAN GALLERY IMAGES BADLEIN -->
+                <h3>Project Gallery (Anime)</h3>
+                <div class="gallery">
+                    <!-- Apni images ko 'images/' folder mein daalein aur yahaan path dein -->
+                    <!-- Path: 'images/anime1.jpg' etc. -->
+                    <img src="https://placehold.co/600x400/000/00ffff/png?text=Anime+Photo+1" alt="Anime Project Photo 1" class="gallery-img">
+                    <img src="https://placehold.co/600x400/000/00ffff/png?text=Anime+Photo+2" alt="Anime Project Photo 2" class="gallery-img">
+                    <img src="https://placehold.co/600x400/000/00ffff/png?text=Anime+Photo+3" alt="Anime Project Photo 3" class="gallery-img">
+                    <img src="https://placehold.co/600x400/000/00ffff/png?text=Anime+Photo+4" alt="Anime Project Photo 4" class="gallery-img">
+                    <img src="https://placehold.co/600x400/000/00ffff/png?text=Anime+Photo+5" alt="Anime Project Photo 5" class="gallery-img">
+                    <img src="https://placehold.co/600x400/000/00ffff/png?text=Anime+Photo+6" alt="Anime Project Photo 6" class="gallery-img">
+                </div>
+
+                <h3 style="margin-top: 40px;">Content Details</h3>
+                <p>Sabhi images high-resolution (4K) hain aur official sources se hain. Download button par click karke "asal khel" shuru karein.</p>
+            </div>
+        </article>
+
+        <footer class="footer-hud">
+            <div>© 2025 KIZNEX SYNTEXO • ALL RIGHTS RESERVED</div>
+        </footer>
+    </div>
+
+    <!-- Detail Page ka JavaScript -->
+    <script src="post.js"></script>
+</body>
+</html>
+
+
+
